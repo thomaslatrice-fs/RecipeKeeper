@@ -50,14 +50,14 @@ npm install
 3. Configure Environment Variables
 Create a .env file inside the server directory. If a .env.example file is available, copy it to .env and enter the appropriate values.
 The Week 1 backend will use:
-PORT=5000
+PORT=5001
 When database access is implemented, add:
 MONGODB_URI=your_mongodb_connection_string
 The backend must load .env before reading its configuration. Keep .env out of Git using .gitignore. Commit .env.example with safe example values so other developers can configure the application. Do not commit database credentials.
 4. Start the Backend
 The planned backend startup command is:
 npm start
-This requires a start script in server/package.json. With PORT=5000, the API should be available at http://localhost:5000.
+This requires a start script in server/package.json. With PORT=5000, the API should be available at http://localhost:5001.
 5. Verify the Backend
 After implementing the health route, open the following address in a browser or send a GET request in Postman:
 http://localhost:5000/api/health
@@ -69,13 +69,13 @@ Resource	URL or Status
 Public GitHub repository	https://github.com/YOUR_GITHUB_USERNAME/recipe-organizer
 GitHub issues	https://github.com/YOUR_GITHUB_USERNAME/recipe-organizer/issues
 GitHub milestones	https://github.com/YOUR_GITHUB_USERNAME/recipe-organizer/milestones
-Planned local backend	http://localhost:5000
-Planned API health endpoint	http://localhost:5000/api/health
+Planned local backend	http://localhost:5001
+Planned API health endpoint	http://localhost:5001/api/health
 Local frontend	To be added after frontend setup
 Staging or live application	To be added if deployment is required
 
 
-The local backend links assume PORT=5000. Update them if the configured port changes.
+The local backend links assume PORT=5001. Update them if the configured port changes.
 Four-Week Scrum Plan
 The project will be organized into four one-week sprints. Each sprint will have a GitHub milestone, issues with acceptance criteria, and a review of completed work. Due dates will follow the course schedule.
 Sprint	Milestone	Planned Deliverables
